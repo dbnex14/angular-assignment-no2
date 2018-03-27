@@ -1,0 +1,11 @@
+<h3>In MycomponentComponent - Practicing Data Bindings</h3>
+<label>User Name</label>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="username">
+<p>{{ username }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="username === ''"
+  (click)="username = ''">Reset User Name</button>
